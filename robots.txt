@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://iwelautomatyka-beep.github.io/hearyourself/sitemap.xml

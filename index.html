@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HearYourself | Low-Latency Live Vocal Monitor</title>
+  <meta name="description" content="HearYourself is a low-latency live vocal monitor for wired headphones, built for singers, warmups, and real-time voice practice.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="HearYourself home">
+        <img src="app-icon.png" alt="HearYourself icon">
+        <span>HearYourself</span>
+      </a>
+      <nav class="topnav">
+        <a href="#screens">Screens</a>
+        <a href="#setup">Setup</a>
+        <a href="privacy-policy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Low-Latency Live Vocal Monitor</p>
+          <h1>Hear your voice live, clear, and fast.</h1>
+          <p class="hero-text">
+            HearYourself is built for singers who want a simple real-time vocal monitor with wired headphones,
+            fast visual feedback, and a clean setup that stays focused on the voice.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#screens">See the app</a>
+            <a class="button button-ghost" href="#setup">How it works</a>
+          </div>
+          <ul class="hero-points">
+            <li>Low-latency live monitor</li>
+            <li>Built for wired headphones</li>
+            <li>Vocal-focused visualizer</li>
+          </ul>
+        </div>
+
+        <div class="hero-art-wrap">
+          <div class="hero-art-panel">
+            <img class="hero-art" src="hero-monitor.png" alt="HearYourself monitor visualizer">
+          </div>
+        </div>
+      </section>
+
+      <section class="signal-band">
+        <div class="signal-card">
+          <span class="signal-label">Best use</span>
+          <p>Use wired headphones and the phone microphone for the cleanest real-time result.</p>
+        </div>
+        <div class="signal-card">
+          <span class="signal-label">Made for</span>
+          <p>Singing practice, warmups, vocal checks, and headphone monitoring on the go.</p>
+        </div>
+        <div class="signal-card">
+          <span class="signal-label">Interface</span>
+          <p>Minimal monitor screen, centered visualizer, fullscreen mode, and vocal-focused settings.</p>
+        </div>
+      </section>
+
+      <section id="screens" class="screens-section">
+        <div class="section-head">
+          <p class="eyebrow">App Screens</p>
+          <h2>Quick monitor workflow with strong visual feedback.</h2>
+        </div>
+
+        <div class="carousel-shell">
+          <button class="carousel-arrow" id="prevShot" aria-label="Previous screen">‹</button>
+          <div class="carousel-stage">
+            <article class="phone-card is-active" data-index="0">
+              <img src="screen-monitor.jpg" alt="HearYourself live monitor screen">
+              <div class="phone-meta">
+                <span class="phone-title">Live monitor</span>
+                <p>Start live mic, check signal status, and switch visualizer layouts.</p>
+              </div>
+            </article>
+            <article class="phone-card" data-index="1">
+              <img src="screen-fullscreen.jpg" alt="HearYourself fullscreen visualizer">
+              <div class="phone-meta">
+                <span class="phone-title">Fullscreen visualizer</span>
+                <p>Open a larger vintage-style visualizer for a stronger live feedback feel.</p>
+              </div>
+            </article>
+            <article class="phone-card" data-index="2">
+              <img src="screen-settings.jpg" alt="HearYourself settings screen">
+              <div class="phone-meta">
+                <span class="phone-title">Vocal settings</span>
+                <p>Shape monitor EQ, input profile, cleanup, and practical control switches.</p>
+              </div>
+            </article>
+          </div>
+          <button class="carousel-arrow" id="nextShot" aria-label="Next screen">›</button>
+        </div>
+
+        <div class="carousel-dots" id="carouselDots" aria-label="Screen selector"></div>
+      </section>
+
+      <section id="setup" class="setup-grid">
+        <div class="setup-copy">
+          <p class="eyebrow">Simple Setup</p>
+          <h2>Ready in a few seconds.</h2>
+          <ol class="steps">
+            <li>Connect wired headphones.</li>
+            <li>Open the Monitor screen.</li>
+            <li>Start live monitor.</li>
+            <li>Adjust EQ and cleanup if needed.</li>
+          </ol>
+        </div>
+        <div class="setup-note">
+          <h3>Why wired only?</h3>
+          <p>
+            HearYourself is designed around real-time voice monitoring. Wired headphones provide a much better latency path
+            than Bluetooth or other delayed output options.
+          </p>
+        </div>
+      </section>
+
+      <section class="footer-banner">
+        <div>
+          <p class="eyebrow">HearYourself</p>
+          <h2>Focused on one thing: clean low-latency live voice monitoring.</h2>
+        </div>
+        <div class="footer-links">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Use</a>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="site.js"></script>
+</body>
+</html>
