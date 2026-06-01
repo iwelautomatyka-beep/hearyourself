@@ -26,39 +26,51 @@
     <a class="back" href="index.html">← Back to HearYourself</a>
     <div class="panel">
       <h1>Privacy Policy</h1>
-      <p class="meta">Last updated: March 16, 2026</p>
+      <p class="meta">Last updated: June 1, 2026 (v1.29)</p>
 
-      <p>HearYourself is a low-latency live vocal monitor app. This Privacy Policy explains what data is used when you use the app and how that data is handled.</p>
+      <p>HearYourself is a low-latency live vocal monitor and on-device voice recorder. This Privacy Policy explains what data the app uses, how it is processed, and what stays on your device.</p>
 
-      <h2>1. Data controller</h2>
+      <h2>1. Developer</h2>
       <p>
-        Janusz Wierzchowski<br>
-        Email: iwelautomatyka@gmail.com
+        ForgeLabs Systems<br>
+        Email: contact@forgelabs.systems
       </p>
 
-      <h2>2. What the app uses</h2>
-      <p>HearYourself uses microphone access because live audio input is required for the core real-time monitor function of the app.</p>
-
-      <h2>3. Microphone data</h2>
-      <p>Microphone audio is used only so the app can provide live monitoring and visualizer feedback while the app is running. The app is intended to process this audio on the device for its core functionality.</p>
-
-      <h2>4. Personal data</h2>
-      <p>HearYourself does not require account registration for the main experience. The app does not ask users to create a profile or log in to use live monitoring features.</p>
-
-      <h2>5. Data sharing</h2>
-      <p>The app is not designed to sell personal data. If future versions introduce additional connected or cloud-based services, this policy should be updated before those features are released.</p>
-
-      <h2>6. Permissions</h2>
-      <p>The app may request access to:</p>
+      <h2>2. What the app does with audio</h2>
+      <p>HearYourself processes audio entirely on your device:</p>
       <ul>
-        <li>Microphone, for live vocal monitoring and visualizer functionality.</li>
+        <li><strong>Live monitoring</strong> — your microphone signal is routed through the app's on-device audio engine (EQ, compressor, de-esser, reverb, etc.) and played back through your wired headphones in real time. The audio is not stored.</li>
+        <li><strong>Recording (M4A)</strong> — when you tap the REC button, the processed voice is encoded as an M4A (AAC) file and saved to the app's private storage on the device. Each recording is capped at 60 minutes. Total recordings storage is capped at roughly 100 MB; the oldest files are automatically deleted when the cap is reached.</li>
       </ul>
 
-      <h2>7. Data retention</h2>
-      <p>The core monitor feature is intended to work in real time. If no recording or account-based feature is added, there is generally no need to retain user audio for the main function of the app.</p>
+      <h2>3. No uploads, no cloud</h2>
+      <p>The app does <strong>not</strong> upload your microphone audio or your recordings anywhere. There is no backend, no account system, no telemetry of voice data, and no third-party audio service. Recordings stay in the app's private app-internal storage until you delete them (or until they are automatically rotated out by the 100 MB cap).</p>
 
-      <h2>8. Contact</h2>
-      <p>If you have questions about this Privacy Policy, contact: iwelautomatyka@gmail.com</p>
+      <h2>4. Personal data</h2>
+      <p>HearYourself does not ask you to create an account, log in, or provide personal information. The app does not collect names, emails, contacts, location, advertising IDs, or device identifiers for tracking purposes.</p>
+
+      <h2>5. Permissions</h2>
+      <p>The app requests the following Android permissions:</p>
+      <ul>
+        <li><strong>Microphone</strong> (RECORD_AUDIO) — required for the live monitor and the recording feature.</li>
+        <li><strong>Foreground service / microphone foreground service</strong> — required so live monitoring and recording can continue while the screen is locked or the app is in the background.</li>
+      </ul>
+      <p>The app does not request internet, storage, contacts, location, camera, or other unrelated permissions.</p>
+
+      <h2>6. Recordings — what you can do with them</h2>
+      <p>Recordings live inside the app. You can play them back, delete individual files, or clear all recordings by uninstalling the app. Because they are stored in app-internal storage, they are removed automatically when the app is uninstalled.</p>
+
+      <h2>7. Third-party libraries</h2>
+      <p>HearYourself uses the Oboe audio library (Google, Apache 2.0) for low-latency audio I/O and the Android system's MediaCodec / MediaMuxer for M4A encoding. These libraries run locally on the device and do not transmit audio off the device. The Android system may also offer the app a Google Play in-app review prompt; declining the prompt does not affect the app.</p>
+
+      <h2>8. Children</h2>
+      <p>HearYourself is not directed at children under 13. The app does not knowingly collect data from children.</p>
+
+      <h2>9. Changes to this policy</h2>
+      <p>If future versions of HearYourself introduce a connected feature (for example, optional cloud backup of recordings), this Privacy Policy will be updated before that feature is released, and the &quot;Last updated&quot; date above will change.</p>
+
+      <h2>10. Contact</h2>
+      <p>If you have questions about this Privacy Policy, contact: contact@forgelabs.systems</p>
     </div>
   </div>
 </body>

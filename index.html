@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HearYourself | Low-Latency Live Vocal Monitor</title>
-  <meta name="description" content="HearYourself is a low-latency live vocal monitor for wired headphones, built for singers, warmups, and real-time voice practice.">
+  <title>HearYourself | Low-Latency Live Vocal Monitor + Recording</title>
+  <meta name="description" content="HearYourself is a low-latency live vocal monitor for wired headphones, with built-in vocal effects (Compressor, De-esser, Shimmer Reverb, Doubler), 14 vocal style presets, on-device M4A recording, and 11 languages — built for singers and real-time voice practice.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -21,6 +21,7 @@
       </a>
       <nav class="topnav">
         <a href="#screens">Screens</a>
+        <a href="#toolbox">Vocal Toolbox</a>
         <a href="#setup">Setup</a>
         <a href="privacy-policy.html">Privacy</a>
         <a href="terms.html">Terms</a>
@@ -30,20 +31,21 @@
     <main id="top">
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Low-Latency Live Vocal Monitor</p>
+          <p class="eyebrow">Version 1.29 · Low-Latency Vocal Monitor</p>
           <h1>Hear your voice live, clear, and fast.</h1>
           <p class="hero-text">
-            HearYourself is built for singers who want a simple real-time vocal monitor with wired headphones,
-            fast visual feedback, and a clean setup that stays focused on the voice.
+            HearYourself is a real-time vocal monitor for wired headphones. Stack four studio-grade
+            voice effects, pick a vocal style preset, and record straight to M4A — all processed
+            on the device with low latency. Now available in 11 languages.
           </p>
           <div class="hero-actions">
             <a class="button button-primary" href="#screens">See the app</a>
-            <a class="button button-ghost" href="#setup">How it works</a>
+            <a class="button button-ghost" href="#toolbox">Vocal toolbox</a>
           </div>
           <ul class="hero-points">
             <li>Low-latency live monitor</li>
-            <li>Built for wired headphones</li>
-            <li>Vocal-focused visualizer</li>
+            <li>Voice effects + 14 style presets</li>
+            <li>On-device M4A recording</li>
           </ul>
         </div>
 
@@ -57,22 +59,22 @@
       <section class="signal-band">
         <div class="signal-card">
           <span class="signal-label">Best use</span>
-          <p>Use wired headphones and the phone microphone for the cleanest real-time result.</p>
+          <p>Use wired headphones and the phone microphone for the cleanest real-time result. Record-only mode works without headphones.</p>
         </div>
         <div class="signal-card">
           <span class="signal-label">Made for</span>
-          <p>Singing practice, warmups, vocal checks, and headphone monitoring on the go.</p>
+          <p>Singing practice, vocal warmups, songwriting takes, demo recording, and headphone monitoring on the go.</p>
         </div>
         <div class="signal-card">
-          <span class="signal-label">Interface</span>
-          <p>Minimal monitor screen, centered visualizer, fullscreen mode, and vocal-focused settings.</p>
+          <span class="signal-label">Languages</span>
+          <p>English, Polish, Spanish, Portuguese (Brazil), German, Russian, Indonesian, Vietnamese, French, Turkish, Italian.</p>
         </div>
       </section>
 
       <section id="screens" class="screens-section">
         <div class="section-head">
           <p class="eyebrow">App Screens</p>
-          <h2>Quick monitor workflow with strong visual feedback.</h2>
+          <h2>Monitor, style your voice, and record — all in one screen.</h2>
         </div>
 
         <div class="carousel-shell">
@@ -82,7 +84,7 @@
               <img src="screen-monitor.jpg" alt="HearYourself live monitor screen">
               <div class="phone-meta">
                 <span class="phone-title">Live monitor</span>
-                <p>Start live mic, check signal status, and switch visualizer layouts.</p>
+                <p>Sticky visualizer, big Start button, lock + record controls, and full effect stack below.</p>
               </div>
             </article>
             <article class="phone-card" data-index="1">
@@ -95,8 +97,8 @@
             <article class="phone-card" data-index="2">
               <img src="screen-settings.jpg" alt="HearYourself settings screen">
               <div class="phone-meta">
-                <span class="phone-title">Vocal settings</span>
-                <p>Shape monitor EQ, input profile, cleanup, and practical control switches.</p>
+                <span class="phone-title">Vocal EQ + Signal</span>
+                <p>Tune Input and Monitor EQ (3 bands each), pick a preset, and toggle de-esser, noise reduction, and boosts.</p>
               </div>
             </article>
           </div>
@@ -106,30 +108,70 @@
         <div class="carousel-dots" id="carouselDots" aria-label="Screen selector"></div>
       </section>
 
+      <section id="toolbox" class="screens-section">
+        <div class="section-head">
+          <p class="eyebrow">Vocal Toolbox · v1.29</p>
+          <h2>Studio-style effects, built for voice.</h2>
+        </div>
+
+        <div class="signal-band">
+          <div class="signal-card">
+            <span class="signal-label">🎙 Compressor</span>
+            <p>Evens out vocal dynamics. Brings quiet syllables forward without crushing the loud ones.</p>
+          </div>
+          <div class="signal-card">
+            <span class="signal-label">🔊 De-esser</span>
+            <p>Tames harsh sibilance on S and Sh sounds, so the top end stays smooth in headphones.</p>
+          </div>
+          <div class="signal-card">
+            <span class="signal-label">✨ Shimmer Reverb</span>
+            <p>Ethereal reverb with an octave-up shimmer tail. Adds space and lift to ballads or worship vocals.</p>
+          </div>
+        </div>
+
+        <div class="signal-band">
+          <div class="signal-card">
+            <span class="signal-label">👥 Doubler</span>
+            <p>Detuned doubled track for instant vocal thickening — useful for pop, R&amp;B, and modern productions.</p>
+          </div>
+          <div class="signal-card">
+            <span class="signal-label">🎚 Vocal EQ</span>
+            <p>Three-band Input EQ (Warmth · Presence · Air) and Monitor EQ (Body · Clarity · Air), with 8 presets including Flat, Singing, Podcast, and ASMR.</p>
+          </div>
+          <div class="signal-card">
+            <span class="signal-label">🎤 14 Vocal Styles</span>
+            <p>One-tap presets: CLEAN, STUDIO, POP, R&amp;B, RAP, HIP-HOP, JAZZ, ROCK, WORSHIP, BALLAD, MOD-POP, PODCAST, TECHNO, TRANCE.</p>
+          </div>
+        </div>
+      </section>
+
       <section id="setup" class="setup-grid">
         <div class="setup-copy">
           <p class="eyebrow">Simple Setup</p>
           <h2>Ready in a few seconds.</h2>
           <ol class="steps">
-            <li>Connect wired headphones.</li>
+            <li>Connect wired headphones (3.5 mm jack or USB-C).</li>
             <li>Open the Monitor screen.</li>
-            <li>Start live monitor.</li>
-            <li>Adjust EQ and cleanup if needed.</li>
+            <li>Start live monitor — hear yourself instantly.</li>
+            <li>Pick a Vocal Style or stack effects manually.</li>
+            <li>Tap REC to capture an M4A take on-device.</li>
           </ol>
         </div>
         <div class="setup-note">
           <h3>Why wired only?</h3>
           <p>
-            HearYourself is designed around real-time voice monitoring. Wired headphones provide a much better latency path
-            than Bluetooth or other delayed output options.
+            Live monitoring is all about the round-trip time from your mouth to your ears.
+            Wired headphones keep that path under ~50 ms; Bluetooth typically adds 150–300 ms,
+            which is too late for real-time vocal feedback. If you only want to record (no live monitor),
+            the app has a Record-only mode that works without headphones.
           </p>
         </div>
       </section>
 
       <section class="footer-banner">
         <div>
-          <p class="eyebrow">HearYourself</p>
-          <h2>Focused on one thing: clean low-latency live voice monitoring.</h2>
+          <p class="eyebrow">HearYourself · v1.29</p>
+          <h2>Live vocal monitor, studio effects, and on-device recording — focused on one thing: your voice.</h2>
         </div>
         <div class="footer-links">
           <a href="privacy-policy.html">Privacy Policy</a>
